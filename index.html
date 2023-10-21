@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="question">
+    <p>what device are you using right now?</p>
+    </div>
+    <div class="comp">
+    <p id="pc" onclick="pc()">PC/LAPTOP/TABLET</p>
+    </div>
+    
+    <div class="mob">
+    <p id="mobile" onclick="mobile()">MOBILE</p>
+    </div>
+    
+    <script>
+        var comp = document.getElementById("pc")
+        var mob = document.getElementById("mobile")
+        
+        function pc(){
+            window.location.href = "pc.html"
+        }
+
+        function mobile(){
+            window.location.href = "mobile.html"
+        }
+
+        comp.addEventListener("mouseover",function(){
+            comp.style.opacity = "20%"
+        })
+
+        comp.addEventListener("mouseout",function(){
+            comp.style.opacity = "100%"
+        })
+
+        mob.addEventListener("mouseover",function(){
+            mob.style.opacity = "20%"
+        })
+        mob.addEventListener("mouseout",function(){
+            mob.style.opacity = "100%"
+        })
+
+
+    </script>
+    
+
+
+
+
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #000000, #333333, #666666);
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        }
+
+
+        .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .content {
+        padding: 20px;
+        }
+
+        .footer {
+        background-color: #333333; /* Dark gray footer background */
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .comp p{
+    font-family: 'Permanent Marker';
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 14px 75px;
+        }
+
+        .mob p{
+    font-family: 'Permanent Marker';
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 14px 75px;;
+        }
+
+        .question p{
+            font-size: 25px;
+          
+            
+        }
+
+    </style>
+</body>
+</html>
